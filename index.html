@@ -43,7 +43,6 @@
             overflow-x: hidden;
         }
 
-        /* Arkaplan Işıltıları */
         .glow {
             position: fixed;
             width: 40vw;
@@ -63,7 +62,6 @@
             padding: 0 20px;
         }
 
-        /* Hero Section */
         header {
             padding: 100px 0 60px;
             text-align: center;
@@ -128,7 +126,40 @@
             box-shadow: 0 15px 30px rgba(119, 221, 231, 0.3);
         }
 
-        /* Platformlar Sonsuz Kaydırma */
+        .secondary-signature {
+            margin-top: 30px;
+            font-size: 14px;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .secondary-signature a {
+            color: var(--accent-turquoise);
+            text-decoration: none;
+            font-weight: 700;
+            padding: 4px 10px;
+            background: rgba(119, 221, 231, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        .secondary-signature a:hover {
+            background: rgba(119, 221, 231, 0.15);
+            border-color: var(--accent-turquoise);
+            color: var(--text-main);
+            box-shadow: 0 0 15px rgba(119, 221, 231, 0.2);
+        }
+
         .platforms-section {
             padding: 80px 0;
             border-top: 1px solid var(--border-color);
@@ -224,7 +255,6 @@
             font-size: 14px;
         }
 
-        /* SSS */
         .faq-section {
             max-width: 800px;
             margin: 0 auto 100px;
@@ -285,7 +315,6 @@
             color: var(--accent-turquoise);
         }
 
-        /* Modal */
         .modal-overlay {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -359,7 +388,6 @@
             font-size: 12px;
         }
 
-        /* Footer */
         footer {
             padding: 80px 0 60px;
             border-top: 1px solid var(--border-color);
@@ -420,6 +448,7 @@
             .platform-card { padding: 15px 25px; min-width: 140px; height: 70px; }
             .modal-content { padding: 30px 20px; border-radius: 30px; }
             .sample-text-area { height: 300px; font-size: 12px; }
+            .secondary-signature { flex-direction: column; gap: 12px; }
         }
     </style>
 </head>
@@ -439,6 +468,11 @@
             <button class="btn-main" id="openModalBtn">
                 <span style="font-size: 24px;">🏛️</span> CİMER'e Görüş Bildir
             </button>
+
+            <div class="secondary-signature">
+                <span>İsterseniz sayacı artırmak için</span>
+                <a href="https://oyunumadokunma.com" target="_blank">oyunumadokunma.com üzerinden imza da verebilirsiniz</a>
+            </div>
         </header>
 
         <!-- Platformlar (Marquee) -->
@@ -451,7 +485,6 @@
             </div>
         </section>
 
-        <!-- Bilgi Kartları -->
         <section>
             <div class="section-title"><span>ℹ️</span> Ne Oluyor?</div>
             <div class="info-grid">
@@ -532,7 +565,7 @@ Saygılarımla.
 
             <div class="instruction-step">
                 <div class="step-number">3</div>
-                <div>CİMER'de "Başvuru Yap" kısmına kopyaladığınız bu metni yapıştırıp gönderin.</div>
+                <div>CİMER'e gidince kopyaladığınız bu metni yapıştırıp gönderin.</div>
             </div>
 
             <button id="copyAndGoBtn" class="btn-main" style="width: 100%; border-radius: 18px; margin-top: 10px;">
@@ -607,7 +640,6 @@ Saygılarımla.
             });
         }
 
-        // Modal ve Kopyalama Mantığı
         const modal = document.getElementById('modalOverlay');
 
         document.getElementById('openModalBtn').onclick = () => modal.style.display = 'flex';
@@ -638,4 +670,3 @@ Saygılarımla.
 </body>
 
 </html>
-
