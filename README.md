@@ -1,4 +1,6 @@
-# [#OyunumuRahatBırak](https://livezival.github.io/oyunumurahatbirak/)
+# #OyunumuRahatBırak
+
+[![screenshot](assets/img/card.png)](https://livezival.github.io/oyunumurahatbirak/)
 
 ### Dijital Oyun Platformlarını Koruyalım
 Türkiye'deki oyuncular, dijital içerik tüketicileri olarak sesimizi duyuralım. Steam, Epic Games ve diğer platformların erişilebilir kalması için CİMER üzerinden görüş bildir!
